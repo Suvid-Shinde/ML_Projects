@@ -1,51 +1,63 @@
 #  Bestseller Books Analysis (2009–2019)
 
-This project analyzes **Amazon's Top 50 Bestseller Books dataset (2009–2019)** using Python.  
-The script explores bestselling books by **genre, year, author trends, and review statistics** with data cleaning, preprocessing, and visualization.
+This project analyzes Amazon's Top 50 Bestseller Books dataset from 2009–2019 using Python. It explores genre trends, bestselling authors, and review patterns through data cleaning, feature engineering, and visualizations.
 
 ---
 
 ##  Features
 
-- **Data Cleaning & Preparation**
-  - Standardized author names (e.g., *"J. K. Rowling"* → *"J.K. Rowling"*).
-  - Added derived features:
-    - `name_len`: length of book titles excluding spaces.
-    - `punc%`: percentage of punctuations in book titles.
+- **Data Cleaning & Processing**
+  - Standardizes author names (e.g., "J. K. Rowling" → "J.K. Rowling")
+  - Adds derived features:
+    - `name_len`: title length excluding spaces
+    - `punc%`: punctuation percentage in titles
 
-- **Exploratory Data Analysis (EDA)**
-  - Distribution of **Fiction vs Non-Fiction** across years.
-  - Top bestselling authors by **frequency & genre**.
-  - Unique books vs duplicate appearances.
-  - Total reviews for top authors.
+- **Exploratory Data Analysis**
+  - Trends in Fiction vs Non-Fiction over time
+  - Top authors by appearance frequency and genre
+  - Unique vs duplicate book entries
+  - Total reviews per author
 
-- **Data Visualization**
-  - Pie charts showing genre distributions.
-  - Year-wise breakdown of book genres (2009–2019).
-  - Bar charts for bestselling authors (Fiction & Non-Fiction).
-  - Comparative analysis of appearances, unique books, and total reviews.
-
----
-
-## Dataset
-
-The dataset used: **`bestsellers with categories.csv`**
-
-It contains the following columns:
-- **Name** → Book title  
-- **Author** → Book author  
-- **User Rating** → Average user rating  
-- **Reviews** → Number of reviews  
-- **Price** → Price of the book  
-- **Year** → Year it was a bestseller  
-- **Genre** → Fiction / Non-Fiction  
+- **Visualizations**
+  - Pie charts by genre
+  - Year-wise genre breakdowns
+  - Bar charts for top authors
+  - Comparative plots of appearances, unique titles, and review counts
 
 ---
 
-## Installation & Requirements
+##  Dataset
 
-Clone the repo:
+- **`bestsellers with categories.csv`** — Contains:
+  - Name (book title)
+  - Author
+  - User Rating
+  - Reviews
+  - Price
+  - Year
+  - Genre (Fiction / Non-Fiction)
+
+---
+
+##  Installation & Requirements
+
+1. Clone this repository:
+    ```bash
+    git clone https://github.com/Suvid-Shinde/ML_Projects.git
+    cd ML_Projects
+    ```
+
+2. Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+   *(or manually install: pandas, numpy, matplotlib, seaborn)*
+
+---
+
+##  Usage
+
+Run the analysis script:
 
 ```bash
-git clone https://github.com/your-username/bestseller-books-analysis.git
-cd bestseller-books-analysis
+python code.py
